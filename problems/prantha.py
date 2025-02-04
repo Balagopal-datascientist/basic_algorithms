@@ -3,12 +3,16 @@
 # For example, given the string "()())()", you should return 1. Given the string ")(", you should return 2, since we must remove all of them.
 def complete_prantha(string):
     counter=0
+    temp=0
     for i in string:
-        if i =='(':
+        if i =='(' :
             counter+=1
-        else:
+        elif i==')' and counter:
             counter-=1
-    return abs(counter)
+        else :
+            temp +=1
+    
+    return counter+temp
 
 
 
