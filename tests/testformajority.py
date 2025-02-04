@@ -14,5 +14,6 @@ class TestMajorityCount(unittest.TestCase):
         self.assertEqual(majority_count([7, 7, 7, 7, 7, 7, 7, 7, 7, 7]), 7)
         self.assertEqual(majority_count([8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]), 8)
 
-if __name__ == '__main__':
-    unittest.main()
+
+        if __name__ == '__main__':
+            unittest.main()
